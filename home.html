@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body>
+  <main class="flex justify-center">
+    <div class="">
+      <div class=""></div>
+      <div class="">
+        <div class="artboard artboard-demo phone-2">
+          <!-- add -->
+          <div class="text-center">
+            <div class="stats shadow">
+              <div class="stat">
+               
+                <div id="money" class="stat-value">5000</div>
+                
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- user action button  -->
+             
+            <div>
+              <button id="addMoney" class="btn btn-outline btn-primary">Add Money</button>
+              <button id='withdraw' class="btn btn-outline btn-accent">Cash Out</button>
+            </div>
+            <!-- horizontal line print -->
+            <div class="divider"></div>
+            <!-- add money part start -->
+            <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input type="text" id="input-amount-get" placeholder="Enter amount" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input type="password" id="input-password-get" autocomplete="off" placeholder="password" class="input input-bordered" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+            <!-- add money part end -->
+             <!-- cash out part start -->
+             <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash out Money</span>
+                  </label>
+                  <input type="text" id="input-amount-cash" placeholder="Enter amount" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input type="password" id="input-password" autocomplete="off" placeholder="password" class="input input-bordered" required />
+                 
+                </div>
+                <div class="form-control mt-6">
+                  <button  id="cash-btn" class="btn btn-primary">Case out</button>
+                </div>
+              </form>
+            </div>
+             <!-- cash out part end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/addmoney.js"></script>
+  <script src="./js/caseMoney.js"></script>
+  <script src="./js/feature.js"></script>
+</body>
+</html>
